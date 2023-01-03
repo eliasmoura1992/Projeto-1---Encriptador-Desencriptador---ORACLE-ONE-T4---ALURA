@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="logo.svg" type="image/svg">
+    <title>Alura Challenge - Criptografar e Descriptografar</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo"><img src="alura-logo.svg" alt="Logo da Alura" /></h1>
+    </header>
+
+    <main>
+      <div id="inputText">
+        <ul>
+          <li>
+            <img src="pessoacomlupa.svg" alt="Pessoa a segurar uma lupa"/>
+            <h2>Nenhuma mensagem encontrada</h2>
+            <h3>Digite um texto a ser criptografado ou descriptografado...</h3>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <textarea
+          id="textArea"
+          placeholder="Digite seu texto..."
+          spellcheck="false"
+        ></textarea>
+      </div>
+      <div id="informacao">
+        <p>&#9888; Apenas letras minúsculas e sem acento.</p>
+      </div>
+      <div id="button">
+        <button id="criptografa" onclick="cripto()">Criptografar</button>
+        <button id="descriptografa" onclick="descripto()">
+          Descriptografar
+        </button>
+      </div>
+      <div id="result">
+        <textarea id="outputText"></textarea>
+        <button id="copiar" onclick="copy()">Copiar</button>
+      </div>
+    </main>
+
+    <footer>
+      <div >
+        <p id="creditos">&copy; Copyright by Elias Moura - 2022 </p>
+      </div>
+      <div id="midiassociais">
+        <div id="sociais">
+            <a href="https://github.com/eliasmoura1992" target="_blank">
+                <img src="github.png" alt="Github" width="19">
+            </a>
+            <a href="https://www.linkedin.com/in/eliasmoura1992" target="_blank">
+                <img src="linkedin.png" alt="Linkedin" width="19">
+            </a>
+        </div>
+    </footer>
+  </body>
+</html>
